@@ -8,9 +8,9 @@ rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: VYO4LugAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-#custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-#  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-#  title: Custom Social
-#  url: https://www.alberteinstein.com/
 linkedin_username: thamer-mecharnia
 github_username: thamermecharnia
+custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
+  logo: https://i1.rgstatic.net/ii/profile.image/11431281284097244-1729092270861_Q512/Thamer-Mecharnia.jpg # can be png, svg, jpg (use absolute path with leading slash)
+  title: Personal website
+  url: https://thamermecharnia.github.io/
