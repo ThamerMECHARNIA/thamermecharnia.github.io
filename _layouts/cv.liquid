@@ -121,9 +121,19 @@ layout: default
         {% endif %}
 
         <!-- RenderCV Sections - Merge Experience and Volunteer -->
-        {% comment %} First, combine Experience and Volunteer entries {% endcomment %}
-        {% assign combined_experience = cv.sections.Experience | concat: cv.sections.Volunteer %}
-        {% if combined_experience.size > 0 %}
+        {% comment %} First, combine Experience and Volunteer entries (guard against missing keys) {% endcomment %}
+        {% assign exp = cv.sections.Experience %}
+        {% assign vol = cv.sections.Volunteer %}
+        {% if exp and vol %}
+          {% assign combined_experience = exp | concat: vol %}
+        {% elsif exp %}
+          {% assign combined_experience = exp %}
+        {% elsif vol %}
+          {% assign combined_experience = vol %}
+        {% else %}
+          {% assign combined_experience = nil %}
+        {% endif %}
+        {% if combined_experience and combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Experience</h3>
@@ -139,8 +149,8 @@ layout: default
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}
 
-          {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+          {% comment %} Skip Experience, Volunteer, and Publications as we handle Publications separately at the end {% endcomment %}
+          {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Publications' %}
             {% continue %}
           {% endif %}
 
@@ -192,6 +202,27 @@ layout: default
             </div>
           </div>
         {% endfor %}
+
+        {% comment %} Render Publications section: from cv.yml if it exists, otherwise from BibTeX bibliography {% endcomment %}
+        {% if cv.sections.Publications and cv.sections.Publications.size > 0 %}
+          <a class="anchor" id="publications"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Publications</h3>
+            <div>
+              {% assign entries = cv.sections.Publications %}
+              {% include cv/publications.liquid %}
+            </div>
+          </div>
+        {% else %}
+          <a class="anchor" id="publications"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Publications</h3>
+            <div class="cv-publications-bib">
+              {% comment %} Render the bibliography using jekyll-scholar's `bibliography` tag without year grouping {% endcomment %}
+              {% bibliography --group_by none %}
+            </div>
+          </div>
+        {% endif %}
 
       {% elsif render_jsonresume and site.data.resume %}
         {% comment %} JSONResume format {% endcomment %}
@@ -258,8 +289,19 @@ layout: default
         {% endif %}
 
         <!-- JSONResume Sections - Merge work and volunteer into Experience -->
-        {% assign combined_experience = site.data.resume.work | concat: site.data.resume.volunteer %}
-        {% if combined_experience.size > 0 %}
+        {% comment %} Guard concat for JSONResume work + volunteer {% endcomment %}
+        {% assign work = site.data.resume.work %}
+        {% assign vol = site.data.resume.volunteer %}
+        {% if work and vol %}
+          {% assign combined_experience = work | concat: vol %}
+        {% elsif work %}
+          {% assign combined_experience = work %}
+        {% elsif vol %}
+          {% assign combined_experience = vol %}
+        {% else %}
+          {% assign combined_experience = nil %}
+        {% endif %}
+        {% if combined_experience and combined_experience.size > 0 %}
           <a class="anchor" id="experience"></a>
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Experience</h3>

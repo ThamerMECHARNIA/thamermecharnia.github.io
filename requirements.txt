@@ -1,4 +1,6 @@
 nbconvert
+pybtex
 pyyaml
 rendercv[full]
 scholarly
+unidecode

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A selection of research and development projects, including academic, collaborative, and personal initiatives.
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [work, fun]
 horizontal: false
 ---

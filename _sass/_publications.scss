@@ -4,6 +4,47 @@
 
 @use "variables" as v;
 
+/*******************************************************************************
+ * CV Publications Section
+ ******************************************************************************/
+
+.cv-publications-bib {
+  ol.bibliography {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0;
+    margin-left: 0;
+
+    li {
+      counter-increment: item;
+      margin-bottom: 1rem;
+
+      .title {
+        font-weight: bolder;
+
+        &::before {
+          content: counter(item) ". ";
+          font-weight: bold;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+
+  .col.col-sm-2.abbr {
+    display: none;
+  }
+
+  .col-sm-8 {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+/*******************************************************************************
+ * Publications Page Section
+ ******************************************************************************/
+
 .publications {
   margin-top: 2rem;
 

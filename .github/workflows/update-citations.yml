@@ -61,6 +61,36 @@ jobs:
           fi
           set -e
 
+      - name: Generate coauthors template
+        id: run_coauthors_update
+        shell: bash
+        run: |
+          set +e
+          echo "🔍 Generating coauthors template from papers.bib..."
+          timeout 60 python bin/generate_coauthors_template.py
+          status=$?
+          if [ $status -eq 0 ]; then
+            echo "✅ Coauthors template generated." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️  Coauthors template generation had issues." >> $GITHUB_STEP_SUMMARY
+          fi
+          set -e
+
+      - name: Generate venues template
+        id: run_venues_update
+        shell: bash
+        run: |
+          set +e
+          echo "🔍 Generating venues template from papers.bib..."
+          timeout 60 python bin/generate_venues_template.py
+          status=$?
+          if [ $status -eq 0 ]; then
+            echo "✅ Venues template generated." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️  Venues template generation had issues." >> $GITHUB_STEP_SUMMARY
+          fi
+          set -e
+
       - name: Save new citations.yml hash
         id: after
         run: |
@@ -93,9 +123,10 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add _data/citations.yml
+          git add _data/citations.yml _data/coauthors.yml _data/venues.yml
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
-            git commit -m "Update Google Scholar citations"
+            git commit -m "Update Google Scholar citations, coauthors, and venues"
             git push
           )
+

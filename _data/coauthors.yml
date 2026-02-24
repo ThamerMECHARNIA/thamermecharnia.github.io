@@ -1,34 +1,229 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
-
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
-
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
-
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+alexiev:
+- firstname:
+  - Vladimir
+  url: ''
+amna:
+- firstname:
+  - Dridi
+  url: ''
+amrouche:
+- firstname:
+  - K
+  - Karima
+  url: ''
+antoine:
+- firstname:
+  - Zimmermann
+  url: ''
+baazaoui:
+- firstname:
+  - Hajer
+  url: ''
+badeig:
+- firstname:
+  - Fabien
+  url: ''
+beach:
+- firstname:
+  - Thomas
+  url: ''
+bocaneala:
+- firstname:
+  - Nicoleta
+  url: ''
+bouhamoum:
+- firstname:
+  - Redouane
+  url: ''
+boukhetta:
+- firstname:
+  - Salah
+  url: ''
+breitenfelder:
+- firstname:
+  - Katja
+  url: ''
+charpenay:
+- firstname:
+  - Victor
+  url: ''
+costa:
+- firstname:
+  - Gon{\c{c}}al
+  url: ''
+d'aquin:
+- firstname:
+  - Mathieu
+  url: ''
+dridi:
+- firstname:
+  - Amna
+  url: ''
+edlira:
+- firstname:
+  - Vakaj
+  url: ''
+fatokun:
+- firstname:
+  - Isaac
+  url: ''
+francesca:
+- firstname:
+  - Noardo
+  url: ''
+franco:
+- firstname:
+  - Cheung
+  url: ''
+gaber:
+- firstname:
+  - Mohamed
+  url: ''
+ghedira:
+- firstname:
+  - Chirine
+  url: ''
+guegan:
+- firstname:
+  - Chirine
+  url: ''
+hamdi:
+- firstname:
+  - Fay{\c{c}}al
+  url: ''
+hansi:
+- firstname:
+  - Hettiarachchi
+  url: ''
+he:
+- firstname:
+  - Tan
+  url: ''
+hedblom:
+- firstname:
+  - Maria
+  url: ''
+hettiarachchi:
+- firstname:
+  - Hansi
+  url: ''
+juganaru:
+- firstname:
+  - Mihaela
+  url: ''
+juganaru{-}mathieu:
+- firstname:
+  - Mihaela
+  url: ''
+jutglar:
+- firstname:
+  - Gon{\c{c}}al
+  url: ''
+khelifa:
+- firstname:
+  - Lydia
+  url: ''
+kochovski:
+- firstname:
+  - Petar
+  url: ''
+lavikka:
+- firstname:
+  - Rita
+  url: ''
+lefran{\c{c}}ois:
+- firstname:
+  - Maxime
+  url: ''
+liudmyla:
+- firstname:
+  - Klochko
+  url: ''
+masmoudi:
+- firstname:
+  - Maroua
+  url: ''
+mathieu:
+- firstname:
+  - D'Aquin
+  url: ''
+maxime:
+- firstname:
+  - Lefran{\c{c}}ois
+  url: ''
+nabti:
+- firstname:
+  - Chemseddine
+  url: ''
+nair:
+- firstname:
+  - Arun
+  url: ''
+nataliya:
+- firstname:
+  - Keberle
+  url: ''
+others:
+- firstname:
+  - ''
+  url: ''
+park:
+- firstname:
+  - Sumee
+  url: ''
+parsafard:
+- firstname:
+  - Pouyan
+  url: ''
+pernelle:
+- firstname:
+  - Nathalie
+  url: ''
+rick:
+- firstname:
+  - Makkinga
+  url: ''
+rouveirol:
+- firstname:
+  - C{\'{e}}line
+  url: ''
+seba:
+- firstname:
+  - Hamida
+  url: ''
+stankovski:
+- firstname:
+  - Vlado
+  url: ''
+tan:
+- firstname:
+  - He
+  url: ''
+tawil:
+- firstname:
+  - Abdel{-}Rahman
+  url: ''
+thamer:
+- firstname:
+  - Mecharnia
+  url: ''
+vakaj:
+- firstname:
+  - Edlira
+  url: ''
+vladimir:
+- firstname:
+  - Alexiev
+  url: ''
+vodislav:
+- firstname:
+  - Dan
+  url: ''
+zghal:
+- firstname:
+  - Hajer
+  url: ''
+zimmermann:
+- firstname:
+  - Antoine
+  url: ''
