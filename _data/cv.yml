@@ -42,7 +42,6 @@ cv:
         studyType: Master's degree in double course with computer engineer option Computer System and Software (SIL)
         start_date: 2013
         end_date: 2018
-        
 
     Experience:
       - company: LORIA - Laboratoire Lorrain de Recherche en Informatique et ses Applications
@@ -121,10 +120,9 @@ cv:
     Languages:
       - name: Arabic
         summary: "Native speaker"
-      
+
       - name: English
         summary: "Fluent"
-      
+
       - name: Franch
         summary: "Fluent"
-      

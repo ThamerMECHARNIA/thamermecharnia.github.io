@@ -1,6 +1,25 @@
 {
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.10.0",
-    "prettier": "^3.8.0"
-  }
+    "prettier": "^3.8.1"
+  },
+  "name": "thamermecharnia.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my academic portfolio and research blog! 🎓",
+  "main": "purgecss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThamerMECHARNIA/thamermecharnia.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ThamerMECHARNIA/thamermecharnia.github.io/issues"
+  },
+  "homepage": "https://github.com/ThamerMECHARNIA/thamermecharnia.github.io#readme"
 }

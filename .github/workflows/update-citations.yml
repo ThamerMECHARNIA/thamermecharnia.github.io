@@ -129,4 +129,3 @@ jobs:
             git commit -m "Update Google Scholar citations, coauthors, and venues"
             git push
           )
-

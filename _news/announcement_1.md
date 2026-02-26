@@ -6,8 +6,7 @@ inline: false
 related_posts: false
 ---
 
-
-I am pleased to announce that I have joined the the [IUT of Montreuil](https://www.univ-paris8.fr/IUT-de-Montreuil) - [University of Paris 8](https://www.univ-paris8.fr/) as an Assistant Professor (Maître de conférences) in Computer Science. I am affiliated with the [Laboratoire d’Intelligence Artificielle et Sémantique des Données (LIASD)](https://www.univ-paris8.fr/UR-Laboratoire-d-Intelligence-Artificielle-et-Semantique-des-Donnees-LIASD) and a member of the *Espaces Intelligents de Données (EID)* research team.
+I am pleased to announce that I have joined the the [IUT of Montreuil](https://www.univ-paris8.fr/IUT-de-Montreuil) - [University of Paris 8](https://www.univ-paris8.fr/) as an Assistant Professor (Maître de conférences) in Computer Science. I am affiliated with the [Laboratoire d’Intelligence Artificielle et Sémantique des Données (LIASD)](https://www.univ-paris8.fr/UR-Laboratoire-d-Intelligence-Artificielle-et-Semantique-des-Donnees-LIASD) and a member of the _Espaces Intelligents de Données (EID)_ research team.
 
 ---
 
