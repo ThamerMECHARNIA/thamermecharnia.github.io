@@ -229,6 +229,13 @@ ninja.data = [{
           window.open("https://github.com/thamermecharnia", "_blank");
         },
       },{
+        id: 'social-hal',
+        title: 'HAL',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://cv.hal.science/thamer-mecharnia", "_blank");
+        },
+      },{
         id: 'social-custom_social',
         title: 'Custom_social',
         section: 'Socials',
