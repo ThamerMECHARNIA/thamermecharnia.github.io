@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.10.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.3",
     "prettier": "^3.8.1"
   },
   "name": "thamermecharnia.github.io",
@@ -8,11 +10,15 @@
   "description": "Welcome to my academic portfolio and research blog! 🎓",
   "main": "purgecss.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThamerMECHARNIA/thamermecharnia.github.io.git"
+  },
+  "lint-staged": {
+    "*.{js,md,yml,scss,liquid}": "prettier --write"
   },
   "keywords": [],
   "author": "",
