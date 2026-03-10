@@ -1,1 +1,5 @@
-npx prettier . --write
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# run prettier on whatever is about to be committed and re‑stage the results
+npx lint-staged
