@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-22'
+  last_updated: '2026-05-01'
 papers:
   VYO4LugAAAAJ:2osOgNQ5qMEC:
     citations: 3
@@ -34,6 +34,6 @@ papers:
     title: An approach toward a prediction of the presence of asbestos in buildings based on incomplete temporal descriptions of marketed products
     year: '2019'
   VYO4LugAAAAJ:zYLM7Y9cAGgC:
-    citations: 19
+    citations: 20
     title: 'CODE-ACCORD: A Corpus of building regulatory data for rule generation towards automatic compliance checking'
     year: '2025'
