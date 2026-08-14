@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-05'
+  last_updated: '2026-08-14'
 papers:
   VYO4LugAAAAJ:2osOgNQ5qMEC:
     citations: 3
@@ -14,7 +14,7 @@ papers:
     title: Modular knowledge integration for smart building digital twins
     year: '2023'
   VYO4LugAAAAJ:Tyk-4Ss8FVUC:
-    citations: 5
+    citations: 6
     title: Formalization of building codes and regulations in knowledge graphs
     year: '2024'
   VYO4LugAAAAJ:UeHWp8X0CEIC:
@@ -34,6 +34,6 @@ papers:
     title: An approach toward a prediction of the presence of asbestos in buildings based on incomplete temporal descriptions of marketed products
     year: '2019'
   VYO4LugAAAAJ:zYLM7Y9cAGgC:
-    citations: 33
+    citations: 35
     title: 'CODE-ACCORD: A Corpus of building regulatory data for rule generation towards automatic compliance checking'
     year: '2025'
